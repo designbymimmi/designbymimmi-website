@@ -12,12 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
     <!-- About section below -->
     <header>
         <section class="about">
+          <!-- button and nav start -->
+          <nav>
+          <button type="button" name="button" class="hamburger" id="hamburger">
+              <img src="img/hamburger-icon.png" alt="hamburger navigation icon">
+          </button>
+            <ul class="nav-ul" id="nav-ul">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- button and nav end -->
+
             <h1>Design By
               <br>Mimmi.</h1>
               <div class="box full-width">
@@ -38,7 +53,7 @@
     </header>
     <!-- Work section below -->
     <main>
-        <section class="work">
+        <section class="work" id="work">
             <h2>Work.</h2>
 
               <div class="box work-box-1 half-width">
@@ -101,7 +116,7 @@
 
     <!-- Contact section below -->
     <footer>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Oh, hello.</h2>
               <div class="box half-width">
                   <div class="box-content">
@@ -127,4 +142,6 @@
         <p class="copyright">Copyright Design By Mimmi 2020</p>
     </footer>
   </body>
+
+  <script src="script.js"></script>
 </html>

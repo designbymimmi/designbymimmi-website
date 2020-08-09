@@ -115,7 +115,7 @@ body {
   background-color: #FEE7E7;
   font-family: 'Lato', sans-serif;
   font-size: 1em;
-  padding: 30px 10px;
+  padding: 10px 10px 30px 10px;
   text-align: center;
 }
 
@@ -165,6 +165,42 @@ p {
   width: 100%;
 }
 
+/*-------------- NAVIGATION BAR --------------*/
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-ul {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+
+.nav-ul.show {
+  display: flex;
+}
+
+.nav-ul li a {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #000;
+}
+
+.hamburger img {
+  height: 30px;
+}
+
 /*-------------- ABOUT SECTION --------------*/
 
 header .box {
@@ -179,7 +215,7 @@ header p, header h3 {
   color: #3B3B3B;
 }
 
-header img {
+header figure img {
   height: 2em;
   margin-bottom: 1.125em;
 }
@@ -274,6 +310,10 @@ footer .copyright {
 
 /* GENERAL */
 
+body {
+  padding: 30px 10px;
+}
+
 section {
  max-width: 1200px;
  display: inline-block;
@@ -305,13 +345,43 @@ h4 {
   float: left;
 }
 
+/*-------------- NAVIGATION BAR --------------*/
+
+nav {
+  width: 30%;
+  float: right;
+  height: 170px;
+  align-items: flex-end;
+}
+
+.nav-ul {
+  display: block;
+  flex-wrap: nowrap;
+  text-align: right;
+  margin-right: 10px;
+}
+
+nav ul li {
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
 /*-------------- ABOUT SECTION --------------*/
 
+h1 {
+  width: 60%;
+}
 header .about {
   width: 100%;
 }
-
-
 
 header .box-content {
   width: 500px;
